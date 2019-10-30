@@ -1,0 +1,32 @@
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 100%;
+}
+
+/* @media screen and (max-width: 1024px) .card-list-item {
+    width: 33.33%;
+} */
+
+.card-list-item {
+    width: 33.33%;
+    display: flex;
+    padding: 0 .5em;
+    flex-grow: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    padding: 2rem 1rem;
+}

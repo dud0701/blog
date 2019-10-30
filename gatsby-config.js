@@ -1,10 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `yeChae`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-generate-typings`, //추가
+      options: {
+        dest: `./src/graphql-types.d.ts`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',//추가
+      options: {
+        name: 'posts',
+        path: `${__dirname}/posts`,
+      },
+    },
+    `gatsby-transformer-remark`,//추가
+    `gatsby-plugin-typescript`,  //추가
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
