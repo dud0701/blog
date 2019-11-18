@@ -1,6 +1,6 @@
 ---
 title: DEVFEST on Campus 2019
-date: 2019-11-17 10:023:13
+date: 2019-11-17 10:23:13
 path: devfest/oncampus-2019
 tag: devfest
 ---
