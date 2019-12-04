@@ -7,7 +7,7 @@ tag: JAVA
 
 # BigDecimal
 
-java BigDeciaml : 이번 프로젝트 하면서 처음 써봤다.<br>
+java BigDeciaml : 이번 프로젝트 하면서 처음 써봤다.😳<br>
 
 performance는 double, float보다 떨어진다고 한다. 그러나 실수의 정확한 연산이 필요할 경우 사용한다. <br>
 
@@ -28,20 +28,20 @@ performance는 double, float보다 떨어진다고 한다. 그러나 실수의 �
 
 ```
 
-## 사칙연산
+## 1️⃣ 사칙연산
 
 1. 더하기 : add <br>
 2. 빼기 : subtract<br>
 3. 곱하기 : multiply<br>
 4. 나누기 : divide - 다른 사칙연산과 똑같이 적용할 경우 에러 날 수 있다. 수수점 자리를 지정 해 주어야한다.<br>
 
-## 비교
+## 2️⃣비교
 
 숫자를 return 한다.<br>
 -1 이면 b가 더 큰수<br>
 0 이면 같다<br>
 1 이면 a가 더 큰수 <br>
 
-## 소수점 처리
+## 3️⃣소수점 처리
 
 소수점 길이를 원하는 만큼 처리 할 때 setScale
