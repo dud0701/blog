@@ -14,11 +14,37 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',//추가
       options: {
+        name: 'images',
+        path: `${__dirname}/posts/Image`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',//추가
+      options: {
         name: 'posts',
         path: `${__dirname}/posts`,
       },
     },
-    `gatsby-transformer-remark`,//추가
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-prismjs',
+            options: {
+              showLineNumbers: true,
+            }
+          },
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 590,
+            }
+          }
+        ]
+      }
+    },
     `gatsby-plugin-typescript`,  //추가
     `gatsby-plugin-react-helmet`,
     {

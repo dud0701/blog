@@ -1393,6 +1393,7 @@ export type MarkdownRemarkHeadingsArgs = {
 
 
 export type MarkdownRemarkTableOfContentsArgs = {
+  absolute?: Maybe<Scalars['Boolean']>,
   pathToSlugField?: Maybe<Scalars['String']>,
   maxDepth?: Maybe<Scalars['Int']>,
   heading?: Maybe<Scalars['String']>
@@ -2237,9 +2238,18 @@ export type SitePageFieldsEnum =
   'pluginCreator___resolve' |
   'pluginCreator___name' |
   'pluginCreator___version' |
+  'pluginCreator___pluginOptions___plugins' |
+  'pluginCreator___pluginOptions___plugins___resolve' |
+  'pluginCreator___pluginOptions___plugins___id' |
+  'pluginCreator___pluginOptions___plugins___name' |
+  'pluginCreator___pluginOptions___plugins___version' |
+  'pluginCreator___pluginOptions___plugins___browserAPIs' |
+  'pluginCreator___pluginOptions___plugins___pluginFilepath' |
   'pluginCreator___pluginOptions___dest' |
   'pluginCreator___pluginOptions___name' |
   'pluginCreator___pluginOptions___path' |
+  'pluginCreator___pluginOptions___showLineNumbers' |
+  'pluginCreator___pluginOptions___maxWidth' |
   'pluginCreator___pluginOptions___short_name' |
   'pluginCreator___pluginOptions___start_url' |
   'pluginCreator___pluginOptions___background_color' |
@@ -2433,9 +2443,20 @@ export type SitePluginFieldsEnum =
   'resolve' |
   'name' |
   'version' |
+  'pluginOptions___plugins' |
+  'pluginOptions___plugins___resolve' |
+  'pluginOptions___plugins___id' |
+  'pluginOptions___plugins___name' |
+  'pluginOptions___plugins___version' |
+  'pluginOptions___plugins___pluginOptions___showLineNumbers' |
+  'pluginOptions___plugins___pluginOptions___maxWidth' |
+  'pluginOptions___plugins___browserAPIs' |
+  'pluginOptions___plugins___pluginFilepath' |
   'pluginOptions___dest' |
   'pluginOptions___name' |
   'pluginOptions___path' |
+  'pluginOptions___showLineNumbers' |
+  'pluginOptions___maxWidth' |
   'pluginOptions___short_name' |
   'pluginOptions___start_url' |
   'pluginOptions___background_color' |
@@ -2558,9 +2579,12 @@ export type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 };
 
 export type SitePluginPluginOptions = {
+  plugins?: Maybe<Array<Maybe<SitePluginPluginOptionsPlugins>>>,
   dest?: Maybe<Scalars['String']>,
   name?: Maybe<Scalars['String']>,
   path?: Maybe<Scalars['String']>,
+  showLineNumbers?: Maybe<Scalars['Boolean']>,
+  maxWidth?: Maybe<Scalars['Int']>,
   short_name?: Maybe<Scalars['String']>,
   start_url?: Maybe<Scalars['String']>,
   background_color?: Maybe<Scalars['String']>,
@@ -2571,9 +2595,12 @@ export type SitePluginPluginOptions = {
 };
 
 export type SitePluginPluginOptionsFilterInput = {
+  plugins?: Maybe<SitePluginPluginOptionsPluginsFilterListInput>,
   dest?: Maybe<StringQueryOperatorInput>,
   name?: Maybe<StringQueryOperatorInput>,
   path?: Maybe<StringQueryOperatorInput>,
+  showLineNumbers?: Maybe<BooleanQueryOperatorInput>,
+  maxWidth?: Maybe<IntQueryOperatorInput>,
   short_name?: Maybe<StringQueryOperatorInput>,
   start_url?: Maybe<StringQueryOperatorInput>,
   background_color?: Maybe<StringQueryOperatorInput>,
@@ -2581,6 +2608,40 @@ export type SitePluginPluginOptionsFilterInput = {
   display?: Maybe<StringQueryOperatorInput>,
   icon?: Maybe<StringQueryOperatorInput>,
   pathCheck?: Maybe<BooleanQueryOperatorInput>,
+};
+
+export type SitePluginPluginOptionsPlugins = {
+  resolve?: Maybe<Scalars['String']>,
+  id?: Maybe<Scalars['String']>,
+  name?: Maybe<Scalars['String']>,
+  version?: Maybe<Scalars['String']>,
+  pluginOptions?: Maybe<SitePluginPluginOptionsPluginsPluginOptions>,
+  browserAPIs?: Maybe<Array<Maybe<Scalars['String']>>>,
+  pluginFilepath?: Maybe<Scalars['String']>,
+};
+
+export type SitePluginPluginOptionsPluginsFilterInput = {
+  resolve?: Maybe<StringQueryOperatorInput>,
+  id?: Maybe<StringQueryOperatorInput>,
+  name?: Maybe<StringQueryOperatorInput>,
+  version?: Maybe<StringQueryOperatorInput>,
+  pluginOptions?: Maybe<SitePluginPluginOptionsPluginsPluginOptionsFilterInput>,
+  browserAPIs?: Maybe<StringQueryOperatorInput>,
+  pluginFilepath?: Maybe<StringQueryOperatorInput>,
+};
+
+export type SitePluginPluginOptionsPluginsFilterListInput = {
+  elemMatch?: Maybe<SitePluginPluginOptionsPluginsFilterInput>,
+};
+
+export type SitePluginPluginOptionsPluginsPluginOptions = {
+  showLineNumbers?: Maybe<Scalars['Boolean']>,
+  maxWidth?: Maybe<Scalars['Int']>,
+};
+
+export type SitePluginPluginOptionsPluginsPluginOptionsFilterInput = {
+  showLineNumbers?: Maybe<BooleanQueryOperatorInput>,
+  maxWidth?: Maybe<IntQueryOperatorInput>,
 };
 
 export type SitePluginSortInput = {
