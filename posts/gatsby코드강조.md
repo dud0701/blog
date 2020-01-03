@@ -1,5 +1,5 @@
 ---
-title: Gatsby/코드 강조하기
+title: 코드 강조하기
 date: 2020-01-02 15:56:48
 path: gatsby-highlightCode
 tag: Gatsby

@@ -1,5 +1,5 @@
 ---
-title: DB/Mysql User 생성 및 권한 부여
+title: Mysql User 생성 및 권한 부여
 date: 2019-12-03 10:16:48
 path: mysqlUser
 tag: DB

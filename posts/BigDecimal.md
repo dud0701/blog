@@ -1,5 +1,5 @@
 ---
-title: JAVA/BigDecimal
+title: BigDecimal
 date: 2019-12-04 10:16:48
 path: java/bigdecimal
 tag: JAVA

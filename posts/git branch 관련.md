@@ -1,5 +1,5 @@
 ---
-title: GIT/branch 관련 명령어
+title: branch 관련 명령어
 date: 2019-11-07 10:23:48
 path: git-branch
 tag: GIT

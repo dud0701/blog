@@ -6,11 +6,12 @@ import Layout from '../components/layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
 import CardList from '../components/CardList';
+import NormalList from '../components/NormalList';
 
 const IndexPage: React.FC = () => {
     return (
         <Layout>
-            <CardList />
+            <NormalList />
         </Layout>
     );
 };

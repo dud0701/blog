@@ -1,8 +1,8 @@
 ---
 title: CORS
 date: 2019-11-12 10:16:48
-path: cors
-tag:
+path: etc-cors
+tag: ETC
 ---
 
 # CORS

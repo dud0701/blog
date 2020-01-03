@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `yeChae`,
+    title: `YECHAE`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
@@ -32,7 +32,7 @@ module.exports = {
           {
             resolve: 'gatsby-remark-prismjs',
             options: {
-              showLineNumbers: true,
+              showLineNumbers: true
             }
           },
           'gatsby-remark-relative-images',

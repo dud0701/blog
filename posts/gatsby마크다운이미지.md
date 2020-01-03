@@ -1,5 +1,5 @@
 ---
-title: Gatsby/마크다운 이미지 표출하기
+title: 마크다운 이미지 표출하기
 date: 2020-01-02 15:06:48
 path: gatsby-markdownImage
 tag: Gatsby

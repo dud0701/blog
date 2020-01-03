@@ -1,5 +1,5 @@
 ---
-title: CLI/사용중인 port찾는 명령어
+title: 사용중인 port찾는 명령어
 date: 2019-12-03 10:01:48
 path: cli-port
 tag: cli
