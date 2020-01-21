@@ -39,8 +39,8 @@ Local DNS 서버가 여러 DNS서버를 차례대로 (Root DNS 서버 -> com DNS
 
 ### 2. Recursive DNS Servers
 
-    - PC는 미리 설정되어 있는 Local DNS에게 IP 주소를 물어봅니다.
-    - 이전에 방문 한적이 있는 페이지라면 캐싱 되어 있을 수도 있다.
+-   PC는 미리 설정되어 있는 Local DNS에게 IP 주소를 물어봅니다.
+-   이전에 방문 한적이 있는 페이지라면 캐싱 되어 있을 수도 있다.
 
 ### 3. Root DNS Servers
 
