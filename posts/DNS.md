@@ -16,7 +16,8 @@ tag: Network
 
 ## DNS 동작 원리
 
-Local DNS 서버가 여러 DNS서버를 차례대로 (Root DNS 서버 -> com DNS 서버 -> naver.com DNS 서버)물어봐서 그 답을 찾는 과정을 **Recursive Query**라고 부른다고 한다.<br>
+![](/dns.png)
+Local DNS 서버가 여러 DNS서버를 차례대로 (Root DNS 서버 -> com DNS 서버 -> naver.com DNS 서버)물어봐서 그 답을 찾는 과정을 **Recursive Query**라고 부른다고 한다.<br><br><br>
 아래는 DNS 풀이(DNS resolution)의 과정? 이다.<br>
 만약 1번에서 찾았다면 그 다음 서버에서 탐색하지 않고 바로 사이트를 찾아간다.<br>
 
@@ -48,6 +49,14 @@ Local DNS 서버가 여러 DNS서버를 차례대로 (Root DNS 서버 -> com DNS
     ![](/rootDNS.png)
 
 ### 4. Top Level DNS Servers
+
+-   Root DNS 서버는 요청된 도메인과 관련 있는 Top Level DNS 서버로 요청을 라우팅 한다. (ex. .com)<br>
+-   이 서버들은 우리가 찾는 연관된 DNS 정보를 어디서 찾을 수 있는지 안다.
+
+### 5. Authoritative DNS Servers(신뢰 할 수 있는 DNS 서버)
+
+-   도메인 정보를 가지고있는 곳이다.
+-   Authoritative DNS 서버는 웹 사이트가 호스팅되는 서버의 IP 주소를 포함하는 도메인의 이름의 Record를 요청한다.
 
 참고 : <br>
 [https://ko.wikipedia.org](https://ko.wikipedia.org)<br>
