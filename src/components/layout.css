@@ -2,6 +2,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+
 }
 
 body {
@@ -10,6 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #fcfcfc;
 }
+
 
 article,
 aside,
@@ -225,7 +227,7 @@ textarea {
 }
 
 html {
-  font: 112.5%/1.45em georgia, serif;
+  font: 112.5%/1.45em BMDOHYEON;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -244,7 +246,7 @@ html {
 
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: HangeulNuri;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
