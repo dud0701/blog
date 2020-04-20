@@ -12,11 +12,19 @@
     font-family: 'BMHANNAPro';
     src: url('../assets/fonts/BMHANNAPro.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'BMJUA';
     src: url('../assets/fonts/BMJUA_ttf.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'BMYEONSUNG';
     src: url('../assets/fonts/BMYEONSUNG_ttf.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'Jeju Gothic';
+    @import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
 }
