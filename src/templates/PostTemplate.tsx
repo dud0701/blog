@@ -19,7 +19,7 @@ const PostTemplate: React.FC<IPosteTemlateProps> = React.memo(props => {
             <h4>{date}</h4>
             <hr />
             <div dangerouslySetInnerHTML={{ __html: html }} />
-            <Utterances repo="dud0701/blog" />
+            <Utterances repo="yechaechae/blog" />
             <br />
             <br />
             <br />
